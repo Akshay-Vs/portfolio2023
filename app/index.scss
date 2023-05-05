@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Eastwood';
+    src: url('assets/fonts/Eastwood.otf') format('opentype');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width:100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    user-select:none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }

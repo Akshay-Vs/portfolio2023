@@ -1,0 +1,170 @@
+.Header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/images/laptop-p.jpeg");
+    background-color: #000000;
+    background-position: center center;
+    background-size: cover;
+    z-index: -10;
+
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 500px;
+        height: 300px;
+        padding: auto;
+        transform: translateY(100px);
+        backdrop-filter: blur(6px);
+        border-radius: 20px;
+        box-shadow: #ffffff06 1px 1px 20px;
+    }
+
+    .mainText {
+        font-family: 'Eastwood', sans-serif;
+        position: absolute;
+        width: 370px;
+        height: 61px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        color: #ffffff;
+        margin: 20px;
+    }
+
+    .roles {
+        position: absolute;
+        width: 370px;
+        height: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px;
+        transform: translateY(60px);
+    }
+
+    .intro {
+        position: absolute;
+        width: 370px;
+        height: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px;
+        transform: translateY(-50px);
+    }
+
+    .button {
+        position: absolute;
+        width: 170px;
+        height: 30px;
+        background: #000000;
+        color: #fff;
+        border-radius: 5px;
+        left: 50%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        transform: translate(-50%, 0);
+        top: 250px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 370px;
+        height: 0px;
+        /*left: 575px;
+    top: 175px;*/
+        border: 3px solid #FFFFFF;
+        margin: 20px;
+        transform: translateY(36px);
+    }
+
+    .wave {
+        animation: wave 2s ease-in-out infinite;
+        display: inline-block;
+        transform-origin: bottom center;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(20deg);
+        }
+
+        40% {
+            transform: rotate(-30deg);
+        }
+
+        60% {
+            transform: rotate(30deg);
+        }
+
+        80% {
+            transform: rotate(-20deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .Header {
+            width: 100%;
+        }
+
+        .mainText {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        .roles {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .line {
+            width: 80%;
+            margin: 10px 0;
+        }
+
+        .button {
+            width: 120px;
+            font-size: 16px;
+        }
+
+        .wave {
+            font-size: 20px;
+        }
+    }
+}

@@ -14,9 +14,13 @@
     "@types/react-dom": "18.2.4",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.12.8",
     "next": "13.4.1",
     "react": "18.2.0",
+    "react-animated-cursor": "^2.6.0",
     "react-dom": "18.2.0",
+    "sass": "^1.62.1",
+    "typed.js": "^2.0.16",
     "typescript": "5.0.4"
   }
 }
