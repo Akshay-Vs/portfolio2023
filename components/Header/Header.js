@@ -20,7 +20,7 @@ function Header({ isVisible }) {
                         </TextIntro>
 
                         <TextMain text="I'm Akshay Vs" />
-                        <div className='Head-line'></div>
+                        <div className='line'></div>
                         <TextRoles text="I'm a MERN dev" />
                     </div>
                 </div >

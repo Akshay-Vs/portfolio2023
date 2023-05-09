@@ -1,8 +1,11 @@
 .Header {
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url("../../assets/images/laptop-p.jpeg");
+    background: url("../../public/assets/images/laptop-p.jpeg");
     background-color: #000000;
     background-position: center center;
     background-size: cover;
@@ -13,14 +16,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
         width: 500px;
         height: 300px;
-        padding: auto;
         transform: translateY(100px);
         backdrop-filter: blur(6px);
         border-radius: 20px;
         box-shadow: #ffffff06 1px 1px 20px;
+        transform: translateY(-100px);
+        padding:10px;
     }
 
     .mainText {
@@ -36,6 +39,12 @@
         text-align: center;
         color: #ffffff;
         margin: 20px;
+
+        @media screen and (max-width: 700px) {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0px;
+        }
     }
 
     .roles {
@@ -51,6 +60,13 @@
         color: #FFFFFF;
         margin: 20px;
         transform: translateY(60px);
+
+        @media screen and (max-width: 700px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 10px;
+            transform: translateY(45px);
+        }
     }
 
     .intro {
@@ -66,6 +82,12 @@
         color: #FFFFFF;
         margin: 20px;
         transform: translateY(-50px);
+
+        @media screen and (max-width: 700px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 10px;
+        }
     }
 
     .button {
@@ -91,11 +113,17 @@
         position: absolute;
         width: 370px;
         height: 0px;
-        /*left: 575px;
-    top: 175px;*/
+        // left: 575px;
+        // top: 175px;
         border: 3px solid #FFFFFF;
         margin: 20px;
         transform: translateY(36px);
+
+        @media screen and (max-width: 700px) {
+            width: 80%;
+            margin:0px;
+            transform: translateY(20px);
+        }
     }
 
     .wave {
@@ -133,38 +161,46 @@
     }
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 70000px) {
         .Header {
-            width: 100%;
-        }
+            background-size: contain;
 
-        .mainText {
-            font-size: 40px;
-            line-height: 40px;
-        }
+            .wrapper {
+                width: 90%;
+                height: 200px;
+                transform: translateY(50px);
+                margin: 0px;
+            }
 
-        .roles {
-            font-size: 18px;
-            line-height: 18px;
-        }
+            .mainText {
+                font-size: 2px;
+                line-height: 40px;
+            }
 
-        .intro {
-            font-size: 18px;
-            line-height: 20px;
-        }
+            .roles {
+                font-size: 16px;
+                line-height: 22px;
+                transform: translateY(40px);
+            }
 
-        .line {
-            width: 80%;
-            margin: 10px 0;
-        }
+            .intro {
+                font-size: 16px;
+                line-height: 22px;
+                transform: translateY(-30px);
+            }
 
-        .button {
-            width: 120px;
-            font-size: 16px;
-        }
+            .button {
+                width: 150px;
+                height: 25px;
+                font-size: 16px;
+                top: 170px;
+            }
 
-        .wave {
-            font-size: 20px;
+            .line {
+                transform: translateY(20px);
+            }
         }
     }
+
+
 }
