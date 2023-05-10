@@ -3,9 +3,10 @@ import './Header.scss'
 import TextIntro from './TextIntro'
 import TextMain from './TextMain'
 import TextRoles from './TextRoles'
+import SideNav from '@components/SideNav'
 import { motion, AnimatePresence } from "framer-motion";
 
-function Header({ isVisible }) {
+export const Header = () => {
     return (
         <AnimatePresence>
             <motion.div
@@ -13,6 +14,7 @@ function Header({ isVisible }) {
                 animate={{ opacity: 1, transition: { delay: 0.5, ease: "easeInOut" } }}
                 exit={{ opacity: 0, transition: { delay: 0.5, ease: "easeInOut" } }}
             >
+                <SideNav />
                 <div className='Header'>
                     <div className='wrapper'>
                         <TextIntro text="Hello world ">
@@ -28,5 +30,3 @@ function Header({ isVisible }) {
         </AnimatePresence>
     )
 }
-
-export default Header
