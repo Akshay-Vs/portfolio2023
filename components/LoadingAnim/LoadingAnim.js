@@ -3,8 +3,9 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { Icons } from './Icons'
-import { Header } from '../Header/Header'
 import './LoadingAnim.scss'
+
+const LazyHeader = React.lazy(() => import("../Header"))
 
 export const LoadingAnim = ({ isVisible }) => {
     const [isLoading, setIsLoading] = useState(true);
@@ -40,5 +41,12 @@ export const LoadingAnim = ({ isVisible }) => {
             </AnimatePresence>
         )
     }
-    else return <Header />
+    else {
+        return (
+          <React.Suspense>
+            <LazyHeader />
+          </React.Suspense>
+        );
+      }
+      
 }
