@@ -6,7 +6,7 @@ import TextRoles from './TextRoles'
 import SideNav from '@components/SideNav'
 import { motion, AnimatePresence } from "framer-motion";
 
-export const Header = () => {
+const Header = () => {
     return (
         <AnimatePresence>
             <motion.div
@@ -30,3 +30,5 @@ export const Header = () => {
         </AnimatePresence>
     )
 }
+
+export default Header
