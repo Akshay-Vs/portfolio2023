@@ -1,5 +1,6 @@
 import LoadingAnim from '@components/LoadingAnim';
 import { CursorAnim } from '@components/CursorAnim/CursorAnim'
+import { Analytics } from '@vercel/analytics/react';
 
 import "./index.scss"
 
