@@ -1,0 +1,206 @@
+.Header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../public/assets/images/laptop-p.jpeg");
+    background-color: #000000;
+    background-position: center center;
+    background-size: cover;
+    z-index: -10;
+
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 300px;
+        transform: translateY(100px);
+        backdrop-filter: blur(6px);
+        border-radius: 20px;
+        box-shadow: #ffffff06 1px 1px 20px;
+        transform: translateY(-100px);
+        padding:10px;
+    }
+
+    .mainText {
+        font-family: 'Eastwood', sans-serif;
+        position: absolute;
+        width: 370px;
+        height: 61px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        color: #ffffff;
+        margin: 20px;
+
+        @media screen and (max-width: 700px) {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0px;
+        }
+    }
+
+    .roles {
+        position: absolute;
+        width: 370px;
+        height: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px;
+        transform: translateY(60px);
+
+        @media screen and (max-width: 700px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 10px;
+            transform: translateY(45px);
+        }
+    }
+
+    .intro {
+        position: absolute;
+        width: 370px;
+        height: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px;
+        transform: translateY(-50px);
+
+        @media screen and (max-width: 700px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 10px;
+        }
+    }
+
+    .button {
+        position: absolute;
+        width: 170px;
+        height: 30px;
+        background: #000000;
+        color: #fff;
+        border-radius: 5px;
+        left: 50%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        transform: translate(-50%, 0);
+        top: 250px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 370px;
+        height: 0px;
+        // left: 575px;
+        // top: 175px;
+        border: 3px solid #FFFFFF;
+        margin: 20px;
+        transform: translateY(36px);
+
+        @media screen and (max-width: 700px) {
+            width: 80%;
+            margin:0px;
+            transform: translateY(20px);
+        }
+    }
+
+    .wave {
+        animation: wave 2s ease-in-out infinite;
+        display: inline-block;
+        transform-origin: bottom center;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(20deg);
+        }
+
+        40% {
+            transform: rotate(-30deg);
+        }
+
+        60% {
+            transform: rotate(30deg);
+        }
+
+        80% {
+            transform: rotate(-20deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+    @media only screen and (max-width: 70000px) {
+        .Header {
+            background-size: contain;
+
+            .wrapper {
+                width: 90%;
+                height: 200px;
+                transform: translateY(50px);
+                margin: 0px;
+            }
+
+            .mainText {
+                font-size: 2px;
+                line-height: 40px;
+            }
+
+            .roles {
+                font-size: 16px;
+                line-height: 22px;
+                transform: translateY(40px);
+            }
+
+            .intro {
+                font-size: 16px;
+                line-height: 22px;
+                transform: translateY(-30px);
+            }
+
+            .button {
+                width: 150px;
+                height: 25px;
+                font-size: 16px;
+                top: 170px;
+            }
+
+            .line {
+                transform: translateY(20px);
+            }
+        }
+    }
+
+
+}
