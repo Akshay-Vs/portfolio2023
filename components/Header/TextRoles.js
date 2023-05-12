@@ -30,7 +30,7 @@ export default function TextRoles() {
 
     return (
         <div className="roles">
-            I'm a <span ref={el}></span>
+            I&apos;m a <span ref={el}></span>
         </div>
     );
 }

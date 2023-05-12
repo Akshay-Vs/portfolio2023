@@ -1,5 +1,7 @@
+// index.js
+import './globals.css'
 import { Inter } from 'next/font/google'
-import { CursorAnim } from '@components/CursorAnim/CursorAnim'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -7,11 +9,7 @@ export const metadata = {
   description: 'Hello there, Im an 18 YO self taught developer',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -20,7 +18,6 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <CursorAnim />
       </body>
     </html>
   )
