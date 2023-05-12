@@ -9,6 +9,7 @@ function App() {
       <div>
         <LoadingAnim />
         <CursorAnim />
+        <Analytics />
       </div>
     );
 }
