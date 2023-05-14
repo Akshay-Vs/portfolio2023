@@ -1,3 +1,6 @@
+@import'@styles/global-colors';
+
+
 .Header {
     display: flex;
     position: relative;
@@ -21,7 +24,7 @@
         transform: translateY(100px);
         backdrop-filter: blur(6px);
         border-radius: 20px;
-        box-shadow: #ffffff06 1px 1px 20px;
+        box-shadow:$text-color 06 1px 1px 20px;
         transform: translateY(-100px);
         padding:10px;
     }
@@ -37,7 +40,7 @@
         font-size: 50px;
         line-height: 61px;
         text-align: center;
-        color: #ffffff;
+        color:$text-color;
         margin: 20px;
 
         @media screen and (max-width: 700px) {
@@ -57,7 +60,7 @@
         font-size: 20px;
         line-height: 18px;
         text-align: center;
-        color: #FFFFFF;
+        color:$text-color;
         margin: 20px;
         transform: translateY(60px);
 
@@ -79,7 +82,7 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-        color: #FFFFFF;
+        color:$text-color;
         margin: 20px;
         transform: translateY(-50px);
 
@@ -95,7 +98,7 @@
         width: 170px;
         height: 30px;
         background: #000000;
-        color: #fff;
+        color: $text-color;
         border-radius: 5px;
         left: 50%;
         font-family: 'Inter';
@@ -115,7 +118,7 @@
         height: 0px;
         // left: 575px;
         // top: 175px;
-        border: 3px solid #FFFFFF;
+        border: 3px solid$text-color;
         margin: 20px;
         transform: translateY(36px);
 
