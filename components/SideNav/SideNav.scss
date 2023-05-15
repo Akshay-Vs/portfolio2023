@@ -1,7 +1,5 @@
-$primary-shadow: rgba(255, 79, 196, 0.181);
 $background: rgba(255, 255, 255, 0.152);
-$button-color: rgba(71, 75, 255, 0.9);
-
+@import'@styles/global-colors';
 
 .nav-container {
     position: fixed;
@@ -19,7 +17,7 @@ $button-color: rgba(71, 75, 255, 0.9);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: $background;
     border-radius: 20px;
-    box-shadow: $primary-shadow 0px 1px 20px;
+    box-shadow: $primary-color 0px 1px 20px;
     z-index: 100;
     transition: 1s;
 
@@ -31,7 +29,7 @@ $button-color: rgba(71, 75, 255, 0.9);
         z-index: 90;
 
         &:hover {
-            box-shadow: $button-color 0px 0px 10px 1px;
+            box-shadow: $primary-color 0px 0px 10px 1px;
         }
     }
 
@@ -51,14 +49,14 @@ $button-color: rgba(71, 75, 255, 0.9);
         transition: 500ms;
 
         i {
-            color: $button-color;
+            color: $primary-color;
             font-size: 20px;
         }
 
         h1 {
             position: absolute;
             left: 80px;
-            color: white;
+            color: $text-color;
             font-family: 'inter' sans-serif;
             font-weight: 400;
             font-size: 25px;
@@ -70,7 +68,7 @@ $button-color: rgba(71, 75, 255, 0.9);
         &:hover {
             width: 50px;
             transition: 1s;
-            box-shadow: rgb(0, 94, 255) 0 0 20px 3px;
+            box-shadow: $primary-color 0 0 20px 3px;
             opacity: 1;
             transition: 1s;
         }
@@ -80,14 +78,14 @@ $button-color: rgba(71, 75, 255, 0.9);
             width: 30px;
 
             i {
-                color: $button-color;
+                color: $primary-color;
                 font-size: 15px;
             }
 
             &:hover {
                 width: 30px;
                 transition: 1s;
-                box-shadow: rgb(0, 94, 255) 0 0 20px 3px;
+                box-shadow: $primary-color 0 0 20px 3px;
                 opacity: 1;
                 transition: 1s;
             }
@@ -108,7 +106,7 @@ $button-color: rgba(71, 75, 255, 0.9);
     }
 
     .active {
-        box-shadow: rgb(0, 94, 255) 0 0 20px 8px;
+        box-shadow: $primary-color 0 0 20px 8px;
     }
 
     @media only screen and (max-width: 700px) {
@@ -132,6 +130,7 @@ $button-color: rgba(71, 75, 255, 0.9);
             align-items: center;
             transition: 500ms;
         }
+
         &:hover h1 {
             display: flex;
             font-size: 0px;
